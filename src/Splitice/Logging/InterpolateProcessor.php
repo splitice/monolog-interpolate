@@ -24,7 +24,7 @@ class InterpolateProcessor
 			}
 		}
 
-		return strtr($message, $from, $to);
+		return str_replace ($from, $to, $message);
 	}
 
 	function __invoke(array $record)
